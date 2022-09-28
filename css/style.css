@@ -98,15 +98,49 @@ a {
   list-style: none;
   padding: 10px;
 }
-.sub-menu ul a {
-  color: #111111;
+.sub-menu h4{
+  color: #ff9897;
 }
+/* .sub-menu ul a {
+  color: #111111;
+} */
 .sub-menu ul a:hover {
   color: #0dcaf0;
 }
 .logo-submenu {
   height: 210px;
   width: 150px;
+}
+.drop-two{
+ position: relative;
+
+  
+}
+.drop-two span {
+  display: inline-block;
+  margin-left: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.drop-two:hover span {
+  transform: rotate(-180deg);
+}
+.menu-two{
+  position: fixed;
+  list-style: none;
+  background: #fff;
+  display: none;
+  color: #000;
+  justify-content: center;
+  width: 15%;
+  box-shadow: 0 0 2px #000;
+  margin-top: 10px;
+}
+.menu-two a:hover{
+  color: #ff9897;
+}
+.drop-two:hover > .menu-two{
+  display: block;
 }
 /*.menu ul.sub-menu {
     position: absolute;
@@ -148,7 +182,7 @@ a {
     margin-top: -40px;
     width: 100%;
   }*/
-
+  
 .back-to-top {
   position: fixed;
   display: none;
@@ -228,7 +262,9 @@ a {
 .fixed-top {
   transition: 0.5s;
 }
-
+.lie{
+  margin-top: 30px;
+}
 .top-bar {
   height: 45px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -433,9 +469,9 @@ a {
 }
 .option {
   background: #ffffff;
-  color: #000;
+
 }
-.form-se:focus {
+.form-se:hover {
   border-color: #f65005;
 }
 
@@ -533,3 +569,12 @@ a {
 .footer .copyright a:hover {
   color: var(--secondary);
 }
+
+
+.pay{
+  margin-top: 90px;
+}
+
+
+
+
