@@ -98,7 +98,7 @@ a {
   list-style: none;
   padding: 10px;
 }
-.sub-menu h4{
+.sub-menu h4 {
   color: #ff9897;
 }
 /* .sub-menu ul a {
@@ -111,10 +111,8 @@ a {
   height: 210px;
   width: 150px;
 }
-.drop-two{
- position: relative;
-
-  
+.drop-two {
+  position: relative;
 }
 .drop-two span {
   display: inline-block;
@@ -125,7 +123,7 @@ a {
 .drop-two:hover span {
   transform: rotate(-180deg);
 }
-.menu-two{
+.menu-two {
   position: fixed;
   list-style: none;
   background: #fff;
@@ -136,10 +134,10 @@ a {
   box-shadow: 0 0 2px #000;
   margin-top: 10px;
 }
-.menu-two a:hover{
+.menu-two a:hover {
   color: #ff9897;
 }
-.drop-two:hover > .menu-two{
+.drop-two:hover > .menu-two {
   display: block;
 }
 /*.menu ul.sub-menu {
@@ -182,7 +180,7 @@ a {
     margin-top: -40px;
     width: 100%;
   }*/
-  
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -258,11 +256,16 @@ a {
   font-weight: 900;
 }
 
+.border-right{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /*** Navbar ***/
 .fixed-top {
   transition: 0.5s;
 }
-.lie{
+.lie {
   margin-top: 30px;
 }
 .top-bar {
@@ -469,7 +472,6 @@ a {
 }
 .option {
   background: #ffffff;
-
 }
 .form-se:hover {
   border-color: #f65005;
@@ -570,9 +572,7 @@ a {
   color: var(--secondary);
 }
 
-
-
-.pay{
+.pay {
   margin-top: 90px;
 }
 
@@ -592,7 +592,6 @@ a {
 }
 
 .ftco-section {
-  padding: 7em 0;
   position: relative;
 }
 
@@ -603,7 +602,7 @@ a {
 }
 
 .ftco-cart button i {
-  color: #88C8BC;
+  color: #0dcaf0;
 }
 
 .ftco-cart .quantity-left-minus {
@@ -620,7 +619,7 @@ a {
 .ftco-cart .form-control {
   height: 54px !important;
   text-align: center;
-  bordeR: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
   color: #000000 !important;
   padding: 0;
   font-size: 14px;
@@ -642,11 +641,11 @@ a {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #88C8BC;
+  color: #88c8bc;
 }
 
 .ftco-cart .form-group .icon span {
-  color: #88C8BC;
+  color: #88c8bc;
 }
 
 @media (max-width: 767.98px) {
@@ -681,7 +680,7 @@ a {
 }
 
 .table .thead-primary {
-  background: #88C8BC;
+  background: #0dcaf0;
 }
 
 .table .thead-primary tr th {
@@ -699,7 +698,7 @@ a {
 }
 
 .table tbody tr td.product-remove a {
-  background: #88C8BC;
+  background: var(--red);
   padding: 4px 10px;
   color: #000000;
   -webkit-border-radius: 2px;
@@ -709,8 +708,8 @@ a {
 }
 
 .table tbody tr td.product-remove a:hover {
-  border: 1px solid #88C8BC;
-  background: #88C8BC;
+  border: 1px solid var(--pink);
+  background: var(--pink);
 }
 
 .table tbody tr td.product-remove a:hover span {
@@ -723,8 +722,8 @@ a {
 
 .table tbody tr td.image-prod .img {
   display: block;
-  width: 100px;
-  height: 150px;
+  width: 50%;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -762,7 +761,7 @@ a {
 .cart-total {
   width: 100%;
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid #b2bec3;
   padding: 20px;
 }
 
@@ -805,7 +804,6 @@ img {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -838,10 +836,10 @@ img {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: var(--red);
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem var(--pink);
+  box-shadow: 0 0 0 0.2rem var(--pink);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -870,4 +868,22 @@ img {
   opacity: 1;
 }
 
+/*btn sign up*/
 
+.btn-signup {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #555;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
